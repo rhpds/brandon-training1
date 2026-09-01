@@ -102,10 +102,13 @@ approval_checklist:
       - "Module 1: Learn to use AsciiDoc variables and the Antora image macro for basic content authoring."
       - "Module 2: Understand the Antora component descriptor structure and navigation configuration."
       - "Module 3: Master UI tab configuration for terminal access and external links."
-    rcars_overlap_pct: 12
+    rcars_overlap_pct: 15
     rcars_top_matches:
       - title: "Getting Started with Ansible Development Tools"
-        relevance_score: 12
+        ci_name: "published.ansible-dev-tools.prod"
+        url: "https://catalog.demo.redhat.com/catalog?item=published.ansible-dev-tools.prod"
+        relevance_score: 15
+        why_it_fits: "Both teach developers to author and configure tools within a framework"
     rejections: []
 
   infra:
