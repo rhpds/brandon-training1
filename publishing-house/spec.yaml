@@ -59,7 +59,13 @@ spec:
 
     # --- VM-specific fields (only when platform = rhel-vms) ---
     # Each entry: {role, count, cpu, ram_gb, disk_gb, os}
-    vms_per_student: []
+    vms_per_student:
+      - role: browser
+        count: 1
+        cpu: 0
+        ram_gb: 0
+        disk_gb: 0
+        os: ""
 
     # --- Common fields (both platforms) ---
     aap_version: ""                    # required if AAP in products
