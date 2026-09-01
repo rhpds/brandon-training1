@@ -97,8 +97,11 @@ approval_checklist:
     prerequisites_verifiable: null
     assessment_strategy: ""
     catalog_gap: ""
-    design_overview: ""
-    module_summaries: []
+    design_overview: "This lab teaches new Showroom authors how to write and configure labs using the Publishing House framework. Participants learn AsciiDoc syntax, Antora configuration, and UI tab setup through three 10-minute modules. All content is browser-based with no infrastructure requirements."
+    module_summaries:
+      - "Module 1: Learn to use AsciiDoc variables and the Antora image macro for basic content authoring."
+      - "Module 2: Understand the Antora component descriptor structure and navigation configuration."
+      - "Module 3: Master UI tab configuration for terminal access and external links."
     rcars_overlap_pct: null
     rcars_top_matches: []
     rejections: []
