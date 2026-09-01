@@ -62,10 +62,10 @@ spec:
     vms_per_student:
       - role: browser
         count: 1
-        cpu: 0
-        ram_gb: 0
-        disk_gb: 0
-        os: ""
+        cpu: 1
+        ram_gb: 1
+        disk_gb: 10
+        os: "linux"
 
     # --- Common fields (both platforms) ---
     aap_version: ""                    # required if AAP in products
