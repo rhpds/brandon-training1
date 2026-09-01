@@ -1,4 +1,4 @@
-# [Project Title]
+# Showroom Lab Authoring Essentials
 
 <!-- This file is the design document for your lab or demo. -->
 <!-- Fill in each section below, or run /rhdp-publishing-house to have the intake skill help. -->
@@ -7,83 +7,75 @@
 
 ## Overview
 
-[2-3 sentences on what this lab or demo is and why it exists. Then a direct description of what participants will do — specific enough that someone reading this section immediately understands the content without interpretation. No flowery language. Example: "Participants will deploy a 3-tier application on OpenShift, configure autoscaling, and troubleshoot a simulated pod failure."]
+This lab teaches new Showroom lab authors how to write and configure labs using the Publishing House framework. Participants learn AsciiDoc syntax, Antora documentation site configuration, and UI tab setup through hands-on exercises. By the end, authors can create new Showroom labs from scratch, configure navigation, and set up terminal and external link tabs for learner environments.
 
 ## Target Audience
 
-- **Role:** [Data scientists, platform engineers, developers, etc.]
-- **Experience level:** [Beginner, intermediate, or advanced]
-- **What they already know:** [Existing skills and knowledge]
-- **What they don't know:** [Skills this lab teaches]
+- **Role:** Lab authors, content developers, technical trainers
+- **Experience level:** Beginner
+- **What they already know:** Basic familiarity with YAML syntax and markup languages
+- **What they don't know:** AsciiDoc-specific syntax, Antora site structure, Showroom UI configuration
 
 ## Prerequisites
 
-- [What the learner must know or have completed before starting]
-- [Can the lab validate these automatically? Yes/No — brief explanation]
+- Basic understanding of YAML configuration files
+- Text editor experience
+- No hands-on experience required; all work is browser-based editing and reading configuration files
 
-<!-- If no prerequisites, write "None" -->
+Can prerequisites be auto-verified? No — this is a training lab with no automated environment checks.
 
 ## Learning Objectives
 
-1. [Action verb] [specific, measurable outcome]
-2. [Action verb] [specific, measurable outcome]
-3. [Action verb] [specific, measurable outcome]
-
-<!-- Scale to duration: up to 3 objectives per 45 min of content. Start with action verbs: Configure, Deploy, Create, Implement, Troubleshoot, Monitor, Scale. Each should be testable. NOT: Understand, Learn, Know. -->
+1. Configure AsciiDoc variables in site.yml and use the Antora image macro to insert images into lab content
+2. Understand and configure Antora component descriptors, navigation files (nav.adoc), and the module hierarchy for documentation structure
+3. Configure terminal and external link tabs in Showroom UI environments using tab properties and validation
 
 ## Content Type
 
-[Lab (hands-on) or Demo (presenter-led)]
+Lab (hands-on)
 
 ## Products & Technologies
 
-- [Official Red Hat product name with version if relevant]
-- [Additional products/technologies]
-
-<!-- Use official names: "Red Hat OpenShift", not "OpenShift". List upstream projects separately. -->
+- AsciiDoc (documentation markup language)
+- Antora (documentation site builder and content management system)
+- YAML (configuration file format)
 
 ## Module Map
 
 | Module | Title | Duration |
 |--------|-------|----------|
-| 1 | [Module title] | [XX min] |
-| 2 | [Module title] | [XX min] |
-| — | **Total hands-on** | **[X hours]** |
-| — | Intro / presentation | [~XX min] |
-| — | **Total lab** | **[~X hours]** |
-
-<!-- Each module 10-30 min. Total: lab 1-4 hours, demo 15-45 min. Modules should build on each other. -->
+| 1 | Writing your lab | 10 min |
+| 2 | Antora | 10 min |
+| 3 | Tabs | 10 min |
+| — | **Total hands-on** | **0.5 hours** |
+| — | **Total lab** | **~0.5 hours** |
 
 ## Difficulty Level
 
-[Beginner, Intermediate, or Advanced]
+Beginner
 
 ## Environment
 
-**Learner view:** [What exists when the lab starts — pre-deployed resources, what participants see and interact with. Be specific about cluster details.]
+**Learner view:** Participants see a browser window with Showroom documentation pages and lab configuration files open in a text editor. They view AsciiDoc source files, YAML configuration examples, and rendered HTML output side-by-side.
 
-**Automation needed:** [Yes/No]
-
-[If yes, list what automation must provision — operators, per-user resources, sample apps, data sets.]
+**Automation needed:** No — this is a knowledge transfer lab with no infrastructure or automation requirements.
 
 ## Infrastructure Requirements
 
-- **Cloud provider:** [CNV (default), AWS, or Troshka (bare-metal/nested virt)]
-- **Cluster type:** [Multinode or SNO (Single Node OpenShift)]
-- **OCP version:** [e.g. 4.20 — minimum 4.20]
-- **Topology:** [Shared cluster, per-student, or CNV pool]
-- **Sizing:** [Node types and counts with resources — e.g., "3 control plane (16 CPU, 64GB RAM), 6 workers (8 CPU, 32GB RAM, 100GB disk)"]
-- **Automation approach:** [Ansible, GitOps (Helm + ArgoCD), or combo]
-- **AI/MaaS:** [None, MaaS (open-source model), MaaS (frontier model), or dedicated GPU — include justification if not "none"]
-- **External services:** [Named services — e.g., github.com, registry.access.redhat.com — or "None"]
-- **AAP version:** [e.g. 2.5 — only if AAP is in products; omit otherwise]
-- **Non-GA products:** [Product name + version, with access plan — or "None (all products are GA)"]
-
-<!-- Not all fields must be known at intake. "TBD, estimating ~X" is fine. -->
+- **Cloud provider:** Not applicable
+- **Cluster type:** Not applicable
+- **OCP version:** Not applicable
+- **Topology:** Not applicable
+- **Sizing:** Not applicable — no infrastructure needed
+- **Automation approach:** None (all content is browser-based editing and configuration review)
+- **AI/MaaS:** None
+- **External services:** AsciiDoc documentation site (docs.asciidoctor.org) for reference; no backend infrastructure required
+- **AAP version:** Not applicable
+- **Non-GA products:** None (all products are GA)
 
 ## Assessment Strategy (Optional)
 
-<!-- Optional — skip this section for demos or classic labs without verification. -->
-<!-- Relevant for Zero-Touch labs with solve/validate buttons or labs with automated checks. -->
-
-[If applicable: how will we know the learner successfully completed each module? Per module: verification script, solve/validate button, visible result in the UI, or automated check.]
+Assessment is implicit: participants successfully complete each module when they understand the configuration concepts and can explain the purpose of each configuration element. No automated verification is required. Success indicators are:
+- Module 1: Participant can identify correct AsciiDoc syntax for variables and image macros
+- Module 2: Participant can map Antora YAML keys to navigation output
+- Module 3: Participant can explain tab type differences and configure a tab property

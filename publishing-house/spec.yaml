@@ -20,9 +20,26 @@ project:
   workflow_id: "b764b590-3fd7-4806-a9f8-ac1b45339340"
 
 spec:
-  title: ""
-  learning_objectives: []
-  modules: []              # [{id, title, duration_min}] — written by intake Phase 4; id is stable (e.g. module-01)
+  title: "Showroom Lab Authoring Essentials"
+  learning_objectives:
+    - "Configure AsciiDoc variables in site.yml and use the Antora image macro to insert images into lab content"
+    - "Understand and configure Antora component descriptors, navigation files (nav.adoc), and the module hierarchy for documentation structure"
+    - "Configure terminal and external link tabs in Showroom UI environments using tab properties and validation"
+  modules:
+    - id: module-01
+      title: "Writing your lab"
+      duration_min: 10
+      status: not_started
+    - id: module-02
+      title: "Antora"
+      duration_min: 10
+      status: not_started
+    - id: module-03
+      title: "Tabs"
+      duration_min: 10
+      status: not_started
+  audience: "beginner"
+  duration_hours: 0.5
   environment:
     platform: ""               # ocp | rhel-vms — determines which sizing fields apply
     topology: ""               # shared-cluster | per-student | cnv-pool
@@ -55,8 +72,6 @@ spec:
     external_services: []              # named external service dependencies e.g. [github.com]
     gpu_nodes: 0                       # number of GPU nodes (0 = none)
     gpu_type: ""                       # e.g. NVIDIA A100 40GB (required if gpu_nodes > 0)
-  duration_hours: null
-  audience: ""               # beginner | intermediate | advanced
 
 development:
   automation:
