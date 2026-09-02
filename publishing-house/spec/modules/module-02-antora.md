@@ -12,9 +12,9 @@ This module explains the Antora documentation site structure and configuration. 
 
 ### Learning Objectives
 
-- Configure Antora component descriptors (antora.yml) and understand how they define site structure and content hierarchy
-- Map Antora YAML configuration keys (name, dir, modules) to their effects on navigation generation and content organization
-- Understand how nav.adoc defines the content tree and how module labels appear in the documentation navigation
+- Understand the structure of the ui-config.yml antora section and how it defines modules
+- Map YAML configuration keys (name, dir, modules) to their purpose in organizing Antora documentation
+- Understand how module name and label properties control content organization and navigation display
 
 ### Lab Structure
 
