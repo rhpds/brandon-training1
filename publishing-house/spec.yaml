@@ -29,15 +29,15 @@ spec:
     - id: module-01
       title: "Writing your lab"
       duration_min: 10
-      status: not_started
+      status: complete
     - id: module-02
       title: "Antora"
       duration_min: 10
-      status: not_started
+      status: complete
     - id: module-03
       title: "Tabs"
       duration_min: 10
-      status: not_started
+      status: complete
   audience: "beginner"
   duration_hours: 0.5
   environment:
@@ -82,11 +82,11 @@ spec:
 development:
   automation:
     ansible:
-      status: not_started
+      status: complete
   e2e:
-    status: not_started
+    status: complete
   healthCheck:
-    status: not_started
+    status: complete
 
 compliance:
   last_hard_check: null

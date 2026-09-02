@@ -1,0 +1,13 @@
+= Conclusion
+
+Congratulations on completing the Showroom Lab Authoring Essentials training!
+
+You've learned the key concepts for creating labs in the Publishing House framework:
+
+* AsciiDoc syntax, variables, and macros for dynamic content
+* Antora's documentation site structure and navigation configuration
+* UI tab setup for terminal access and external links
+
+These skills form the foundation for creating your own Showroom labs. Use what you've learned to author engaging, well-structured lab content that guides learners through hands-on experiences.
+
+Happy authoring!

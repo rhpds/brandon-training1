@@ -1,0 +1,13 @@
+= Showroom Lab Authoring Essentials
+
+Welcome to this training lab on creating Showroom labs using the Publishing House framework.
+
+In this lab, you'll learn how to:
+
+* Configure AsciiDoc variables and use Antora image macros for content authoring
+* Understand and configure Antora component descriptors and navigation structure
+* Set up terminal and external link tabs in Showroom UI environments
+
+Each module builds on the previous one, giving you a complete understanding of the Publishing House framework workflow.
+
+Let's get started!
