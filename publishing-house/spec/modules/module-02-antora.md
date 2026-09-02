@@ -12,9 +12,9 @@ This module explains the Antora documentation site structure and configuration. 
 
 ### Learning Objectives
 
-- Understand the structure of the ui-config.yml antora section and how it defines modules
-- Map YAML configuration keys (name, dir, modules) to their purpose in organizing Antora documentation
-- Understand how module name and label properties control content organization and navigation display
+- Identify the key components of the ui-config.yml antora configuration section
+- Recognize the purpose of the name, dir, and modules keys in Antora configuration
+- Understand how module properties (name and label) relate to content organization
 
 ### Lab Structure
 
