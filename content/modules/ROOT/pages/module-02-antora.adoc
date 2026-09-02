@@ -1,6 +1,10 @@
 = Antora
 
-The `antora` key in `ui-config.yml` defines how the documentation site is built using Antora.
+Antora is a documentation site builder that organizes content hierarchically: **component > modules > pages**. The `antora` key in `ui-config.yml` defines how your documentation site is structured and built.
+
+== Understanding Antora Configuration
+
+The `antora.yml` component descriptor and the `ui-config.yml` configuration work together to organize your lab content:
 
 [source,yaml]
 ----
@@ -8,7 +12,7 @@ antora:
   name: modules
   dir: www
   modules:
-    - name: module-01 
+    - name: module-01
       label: "Writing your lab"
     - name: module-02
       label: "Antora"
@@ -16,13 +20,23 @@ antora:
       label: "Tabs"
 ----
 
-=== Explanation
+== Key Components
 
-- `name`: The name of the documentation folder, here called `modules`.
-- `dir`: The directory where the documentation files will be located (`www`). 
-- `modules`: The list of modules that make up your lab.
+- **`name`**: The name of the documentation component. Maps to directories like `content/modules/` (where `modules` is the component name).
+- **`dir`**: The output directory where the built documentation files will be located.
+- **`modules`**: A list of module definitions that make up your component. Each module corresponds to a directory in the content hierarchy.
 
 Each module has:
 
-- `name`: The file name within the `pages` directory.
-- `label`: A human-readable label for display in navigation.
+- **`name`**: The module identifier that maps to the directory name. For example, `name: module-01` corresponds to `content/modules/ROOT/` directory structure.
+- **`label`**: A human-readable display name shown in the navigation menu. Changing this label updates what learners see in the sidebar without modifying the underlying file structure.
+
+== Content Organization
+
+Antora automatically:
+1. Reads `nav.adoc` to understand the page hierarchy and navigation tree
+2. Maps module names to their content directories
+3. Uses module labels to generate the navigation menu display
+4. Builds the final HTML documentation from the AsciiDoc source files
+
+This hierarchical structure allows you to organize complex content while maintaining clean, predictable directory layouts.
